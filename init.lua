@@ -151,6 +151,9 @@ vim.opt.cursorline = true
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 1000
 
+-- providers
+vim.g.python3_host_prog = '/home/jhall/.local/share/nvim/venv/bin/python'
+
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
 

@@ -1,12 +1,14 @@
 print 'From colors'
 local color_my_pencils = function()
-  vim.cmd.hi 'Comment gui=none'
-  vim.cmd.hi 'DiffAdd ctermbg=234 ctermfg=046 guibg=None'
-  vim.cmd.hi 'DiffChange ctermbg=234 ctermfg=226 guibg=NONE'
-  vim.cmd.hi 'DiffDelete ctermbg=None ctermfg=lightred guibg=NONE'
-  vim.cmd.hi 'DiffText ctermbg=NONE ctermfg=lightred guibg=NONE'
-  vim.cmd.hi 'MiniStatuslineDevinfo ctermbg=234'
-  vim.cmd.hi 'MiniStatuslineFileinfo ctermbg=234'
-  vim.cmd.hi 'MiniStatuslineFilename ctermbg=234'
+  vim.api.nvim_set_hl(0, 'Comment', {})
+  vim.api.nvim_set_hl(0, 'Cursor', { ctermfg = 251 })
+  vim.api.nvim_set_hl(0, 'DiffAdd', { fg = '#05fc47', ctermfg = 'lightgreen', bold = true })
+  vim.api.nvim_set_hl(0, 'DiffChange', { ctermfg = 226, bold = true })
+  vim.api.nvim_set_hl(0, 'DiffDelete', { ctermfg = 160 })
+  vim.api.nvim_set_hl(0, 'DiffText', { ctermfg = 'lightred' })
+  vim.api.nvim_set_hl(0, 'MiniStatuslineDevinfo', { ctermbg = 234 })
+  vim.api.nvim_set_hl(0, 'MiniStatuslineFileinfo', { ctermbg = 234 })
+  vim.api.nvim_set_hl(0, 'MiniStatuslineFilename', { ctermbg = 234 })
 end
+
 color_my_pencils()
