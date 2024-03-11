@@ -141,6 +141,9 @@ vim.opt.splitbelow = true
 --  and `:help 'listchars'`
 vim.opt.list = true
 vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
+vim.opt.expandtab = true
+vim.opt.tabstop = 4
+vim.opt.shiftwidth = 8
 
 -- Preview substitutions live, as you type!
 vim.opt.inccommand = 'split'
@@ -152,7 +155,7 @@ vim.opt.cursorline = true
 vim.opt.scrolloff = 1000
 
 -- providers
-vim.g.python3_host_prog = '/home/jhall/.local/share/nvim/venv/bin/python'
+vim.g.python3_host_prog = '/home/jhall/.local/share/nvim/venv/bin/python3'
 
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
